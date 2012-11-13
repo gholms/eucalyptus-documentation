@@ -49,6 +49,7 @@
 
 	<target name="copy_pdf">
 		<!-- Copy the generated PDF files to the packages directory	-->
+		<mkdir dir="${product.dir}${file.separator}en_us"/>
 		<copy
 			file="${source.dir}${file.separator}en_us${file.separator}ag${file.separator}out${file.separator}pdf${file.separator}ag.pdf"
 			todir="${product.dir}${file.separator}en_us" overwrite="true"/>
@@ -71,6 +72,7 @@
 
 	<target name="copy_xhtml">
 		<!-- Copy the generated XHTML files to the packages directory	-->
+		<mkdir dir="${product.dir}${file.separator}en_us"/>
 
 		<copy todir="${product.dir}${file.separator}en_us" overwrite="true">
 			<fileset
